@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandrika's Store - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-store-alt"></i>
+                <h1>Chandrika's Store</h1>
+            </div>
+            <nav>
+                <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="products.html"><i class="fas fa-shopping-bag"></i> Products</a>
+                <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button id="themeToggle" class="icon-btn" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="icon-btn cart-btn" title="Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button id="logoutBtn" class="logout-btn" title="Logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="products.html"><i class="fas fa-shopping-bag"></i> Products</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">✨ New Collection 2026</span>
+            <h2>Discover Quality Products</h2>
+            <p>Shop the latest trends with unbeatable prices and fast delivery across India</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="btn-primary">Shop Now <i class="fas fa-arrow-right"></i></a>
+                <a href="about.html" class="btn-outline">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop" alt="Shopping">
+        </div>
+    </section>
+
+    <!-- Features Bar -->
+    <section class="features-bar">
+        <div class="feature-item">
+            <i class="fas fa-truck-fast"></i>
+            <div>
+                <h4>Free Shipping</h4>
+                <p>On orders above ₹999</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-shield-halved"></i>
+            <div>
+                <h4>Secure Payment</h4>
+                <p>100% protected</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-rotate-left"></i>
+            <div>
+                <h4>Easy Returns</h4>
+                <p>30-day return policy</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-headset"></i>
+            <div>
+                <h4>24/7 Support</h4>
+                <p>Always here to help</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="section-header">
+            <h2>Featured Products</h2>
+            <a href="products.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="products-grid" id="featuredGrid">
+            <!-- Loaded by JS -->
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories-section">
+        <h2>Shop by Category</h2>
+        <div class="categories-grid">
+            <a href="products.html?category=electronics" class="category-card">
+                <i class="fas fa-laptop"></i>
+                <h3>Electronics</h3>
+            </a>
+            <a href="products.html?category=clothing" class="category-card">
+                <i class="fas fa-shirt"></i>
+                <h3>Clothing</h3>
+            </a>
+            <a href="products.html?category=home" class="category-card">
+                <i class="fas fa-couch"></i>
+                <h3>Home & Living</h3>
+            </a>
+            <a href="products.html?category=accessories" class="category-card">
+                <i class="fas fa-glasses"></i>
+                <h3>Accessories</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-avatar">C</div>
+                <h3>Chandrika</h3>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">SP</div>
+                <h3>Surya Prakash</h3>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">MP</div>
+                <h3>Mokshapradha</h3>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">ST</div>
+                <h3>Santhosh</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-store-alt"></i> Chandrika's Store</h3>
+                <p>Your trusted shopping destination.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Tadepalligudem, India</p>
+                <p><i class="fas fa-envelope"></i> chandrika@email.com</p>
+                <p><i class="fas fa-phone"></i> +91 93984 78292</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Developed by Chandrika's Team | Chandrika • Surya Prakash • Mokshapradha • Santhosh</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- ============ Product Detail Modal ============ -->
+<div class="product-modal-overlay" id="productModal">
+    <div class="product-modal">
+        <button class="modal-close" onclick="closeProductModal()">×</button>
+        <div class="modal-content">
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="">
+            </div>
+            <div class="modal-details">
+                <span class="modal-category" id="modalCategory"></span>
+                <h2 id="modalName"></h2>
+                <div class="modal-rating" id="modalRating"></div>
+                <div class="modal-price" id="modalPrice"></div>
+                <div class="modal-divider"></div>
+                <div class="modal-specs">
+                    <h4>Product Specifications</h4>
+                    <ul id="modalSpecs"></ul>
+                </div>
+                <div class="modal-description">
+                    <h4>Description</h4>
+                    <p id="modalDescription"></p>
+                </div>
+                <div class="modal-actions">
+                    <div class="modal-quantity">
+                        <button onclick="modalQuantityChange(-1)">−</button>
+                        <span id="modalQuantity">1</span>
+                        <button onclick="modalQuantityChange(1)">+</button>
+                    </div>
+                    <button class="add-cart-btn" id="modalAddCart" onclick="addToCartFromModal()">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+                <div class="modal-features">
+                    <div class="modal-feature"><i class="fas fa-truck"></i> Free Shipping on orders above ₹999</div>
+                    <div class="modal-feature"><i class="fas fa-undo"></i> 30-Day Easy Returns</div>
+                    <div class="modal-feature"><i class="fas fa-shield-alt"></i> 100% Secure Payment</div>
+                    <div class="modal-feature"><i class="fas fa-check-circle"></i> Quality Guaranteed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

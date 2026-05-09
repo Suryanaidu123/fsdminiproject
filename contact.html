@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Chandrika's Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-store-alt"></i>
+                <h1>Chandrika's Store</h1>
+            </div>
+            <nav>
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="products.html"><i class="fas fa-shopping-bag"></i> Products</a>
+                <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                <a href="contact.html" class="active"><i class="fas fa-phone"></i> Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button id="themeToggle" class="icon-btn"><i class="fas fa-moon"></i></button>
+                <a href="cart.html" class="icon-btn cart-btn" title="Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button id="logoutBtn" class="logout-btn"><i class="fas fa-sign-out-alt"></i></button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a><a href="products.html">Products</a>
+        <a href="about.html">About</a><a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+    </div>
+
+    <section class="contact-page">
+        <h2>Get In Touch</h2>
+        <div class="contact-wrapper">
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-row">
+                    <div class="input-group">
+                        <input type="text" id="contactName" placeholder="Your Name" required>
+                        <span class="error-message" id="contactNameError"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="contactEmail" placeholder="Your Email" required>
+                        <span class="error-message" id="contactEmailError"></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="contactPhone" placeholder="Phone Number (10 digits)">
+                    <span class="error-message" id="contactPhoneError"></span>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="contactSubject" placeholder="Subject" required>
+                    <span class="error-message" id="contactSubjectError"></span>
+                </div>
+                <div class="input-group">
+                    <textarea id="contactMessage" rows="6" placeholder="Your Message (min 10 characters)" required></textarea>
+                    <span class="error-message" id="contactMessageError"></span>
+                </div>
+                <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div class="contact-details">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Address</h4>
+                    <p>Tadepalli Gudem, Andra Pradesh, India</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>chandrika@email.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>Phone</h4>
+                    <p>+91 93984 78292</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2026 Developed by Chandrika's Team | Chandrika • Surya Prakash • Mokshapradha • Santhosh</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- ============ Product Detail Modal ============ -->
+<div class="product-modal-overlay" id="productModal">
+    <div class="product-modal">
+        <button class="modal-close" onclick="closeProductModal()">×</button>
+        <div class="modal-content">
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="">
+            </div>
+            <div class="modal-details">
+                <span class="modal-category" id="modalCategory"></span>
+                <h2 id="modalName"></h2>
+                <div class="modal-rating" id="modalRating"></div>
+                <div class="modal-price" id="modalPrice"></div>
+                <div class="modal-divider"></div>
+                <div class="modal-specs">
+                    <h4>Product Specifications</h4>
+                    <ul id="modalSpecs"></ul>
+                </div>
+                <div class="modal-description">
+                    <h4>Description</h4>
+                    <p id="modalDescription"></p>
+                </div>
+                <div class="modal-actions">
+                    <div class="modal-quantity">
+                        <button onclick="modalQuantityChange(-1)">−</button>
+                        <span id="modalQuantity">1</span>
+                        <button onclick="modalQuantityChange(1)">+</button>
+                    </div>
+                    <button class="add-cart-btn" id="modalAddCart" onclick="addToCartFromModal()">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+                <div class="modal-features">
+                    <div class="modal-feature"><i class="fas fa-truck"></i> Free Shipping on orders above ₹999</div>
+                    <div class="modal-feature"><i class="fas fa-undo"></i> 30-Day Easy Returns</div>
+                    <div class="modal-feature"><i class="fas fa-shield-alt"></i> 100% Secure Payment</div>
+                    <div class="modal-feature"><i class="fas fa-check-circle"></i> Quality Guaranteed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

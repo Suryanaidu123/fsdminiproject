@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Chandrika's Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-icon">
+                <i class="fas fa-user-plus"></i>
+            </div>
+            <h1>Create Account</h1>
+            <p class="login-subtitle">Join Chandrika's Store today</p>
+            
+            <form id="registerForm" novalidate>
+                <!-- Full Name -->
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-user"></i></span>
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <!-- Email -->
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-envelope"></i></span>
+                    <input type="email" id="regEmail" placeholder="Email Address" required>
+                    <span class="error-message" id="regEmailError"></span>
+                </div>
+
+                <!-- Phone -->
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-phone"></i></span>
+                    <input type="tel" id="phone" placeholder="Phone Number (10 digits)" required>
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+                
+                <!-- Password -->
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-lock"></i></span>
+                    <input type="password" id="regPassword" placeholder="Password" required>
+                    <span class="toggle-password-icon" id="toggleRegPassword"><i class="fas fa-eye"></i></span>
+                    <span class="error-message" id="regPasswordError"></span>
+                    <div class="password-strength" id="passwordStrength">
+                        <div class="strength-bar" id="strengthBar"></div>
+                        <span id="strengthText">Password strength</span>
+                    </div>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-check-circle"></i></span>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    <span class="error-message" id="confirmPasswordError"></span>
+                </div>
+
+                <div class="register-status" id="registerStatus"></div>
+                
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-user-plus"></i> Create Account
+                </button>
+            </form>
+            
+            <p class="register-link">
+                Already have an account? <a href="login.html">Sign In</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

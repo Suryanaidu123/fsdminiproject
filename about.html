@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Chandrika's Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-store-alt"></i>
+                <h1>Chandrika's Store</h1>
+            </div>
+            <nav>
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="products.html"><i class="fas fa-shopping-bag"></i> Products</a>
+                <a href="about.html" class="active"><i class="fas fa-info-circle"></i> About</a>
+                <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button id="themeToggle" class="icon-btn"><i class="fas fa-moon"></i></button>
+                <button id="logoutBtn" class="logout-btn"><i class="fas fa-sign-out-alt"></i></button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a><a href="products.html">Products</a>
+        <a href="about.html">About</a><a href="contact.html">Contact</a>
+    </div>
+
+    <section class="about-page">
+        <div class="about-hero">
+            <h2>About Chandrika's Store</h2>
+            <p>Founded by students with a passion for quality and affordability</p>
+        </div>
+        <div class="about-content">
+            <div class="about-card">
+                <i class="fas fa-bullseye"></i>
+                <h3>Our Mission</h3>
+                <p>To provide high-quality products at student-friendly prices with exceptional service.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-eye"></i>
+                <h3>Our Vision</h3>
+                <p>To become India's most trusted student-led e-commerce platform.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-heart"></i>
+                <h3>Our Values</h3>
+                <p>Integrity, quality, and customer satisfaction above everything else.</p>
+            </div>
+        </div>
+        <div class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card"><div class="team-avatar">C</div><h3>Chandrika</h3></div>
+                <div class="team-card"><div class="team-avatar">SP</div><h3>Surya Prakash</h3></div>
+                <div class="team-card"><div class="team-avatar">MP</div><h3>Mokshapradha</h3></div>
+                <div class="team-card"><div class="team-avatar">ST</div><h3>Santhosh</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2026 Developed by Chandrika's Team | Chandrika • Surya Prakash • Mokshapradha • Santhosh</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- ============ Product Detail Modal ============ -->
+<div class="product-modal-overlay" id="productModal">
+    <div class="product-modal">
+        <button class="modal-close" onclick="closeProductModal()">×</button>
+        <div class="modal-content">
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="">
+            </div>
+            <div class="modal-details">
+                <span class="modal-category" id="modalCategory"></span>
+                <h2 id="modalName"></h2>
+                <div class="modal-rating" id="modalRating"></div>
+                <div class="modal-price" id="modalPrice"></div>
+                <div class="modal-divider"></div>
+                <div class="modal-specs">
+                    <h4>Product Specifications</h4>
+                    <ul id="modalSpecs"></ul>
+                </div>
+                <div class="modal-description">
+                    <h4>Description</h4>
+                    <p id="modalDescription"></p>
+                </div>
+                <div class="modal-actions">
+                    <div class="modal-quantity">
+                        <button onclick="modalQuantityChange(-1)">−</button>
+                        <span id="modalQuantity">1</span>
+                        <button onclick="modalQuantityChange(1)">+</button>
+                    </div>
+                    <button class="add-cart-btn" id="modalAddCart" onclick="addToCartFromModal()">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+                <div class="modal-features">
+                    <div class="modal-feature"><i class="fas fa-truck"></i> Free Shipping on orders above ₹999</div>
+                    <div class="modal-feature"><i class="fas fa-undo"></i> 30-Day Easy Returns</div>
+                    <div class="modal-feature"><i class="fas fa-shield-alt"></i> 100% Secure Payment</div>
+                    <div class="modal-feature"><i class="fas fa-check-circle"></i> Quality Guaranteed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
